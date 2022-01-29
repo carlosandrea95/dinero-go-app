@@ -1,0 +1,91 @@
+import { StyleSheet, Dimensions } from "react-native";
+
+const { width, height } = Dimensions.get("window");
+
+module.exports = StyleSheet.create({
+  btnWhite: {
+    borderWidth: 1,
+    borderColor: "#fff",
+    backgroundColor: "#fff",
+    borderRadius: 10,
+    paddingTop: 10,
+    paddingBottom: 10,
+    width: "90%",
+    alignItems: "center",
+    marginBottom: 20,
+    marginTop: "10%",
+  },
+  btnText: { color: "#b243da", fontSize: 18, fontWeight: "600" },
+  textInput: {
+    backgroundColor: "#f2f2f2",
+    color: "#b243da",
+    borderRadius: 10,
+    paddingTop: 5,
+    paddingBottom: 5,
+    paddingLeft: 10,
+    paddingRight: 5,
+    marginTop: 5,
+    fontSize: width / 26,
+    fontWeight: "600",
+  },
+  appContainer: {
+    height: "80%",
+    marginTop: "-15%",
+    borderTopLeftRadius: 25,
+    borderTopRightRadius: 25,
+    backgroundColor: "#fff",
+    alignItems: "center",
+  },
+  centerItems: {
+    alignItems: "center",
+  },
+  appScrollContainer: {
+    height: "80%",
+    marginTop: "-10%",
+    borderTopLeftRadius: 25,
+    borderTopRightRadius: 25,
+    backgroundColor: "#fff",
+    // alignItems: "center",
+  },
+  formContainer: { width: "85%", paddingTop: 5 },
+  label: {
+    color: "#989898",
+    fontWeight: "600",
+    fontSize: width / 30,
+    marginTop: 5,
+  },
+  labelGroup: {
+    color: "#b243da",
+    fontWeight: "600",
+    fontSize: width / 26,
+    marginTop: 10,
+  },
+  inputIOS: {
+    backgroundColor: "#f2f2f2",
+    color: "#b243da",
+    borderRadius: 10,
+    paddingTop: 5,
+    paddingBottom: 5,
+    paddingLeft: 10,
+    paddingRight: 5,
+    marginTop: 10,
+    fontSize: width / 26,
+    textAlign: "center",
+    fontWeight: "600", // to ensure the text is never behind the icon
+    marginRight: "10%",
+  },
+  inputAndroid: {
+    backgroundColor: "#f2f2f2",
+    color: "#b243da",
+    borderRadius: 10,
+    paddingTop: 5,
+    paddingBottom: 5,
+    paddingLeft: 10,
+    paddingRight: 5,
+    marginTop: 10,
+    fontSize: width / 26,
+    textAlign: "center",
+    fontWeight: "600", // to ensure the text is never behind the icon
+    marginRight: "5%",
+  },
+});
